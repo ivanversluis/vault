@@ -1,0 +1,3 @@
+```release-note:feature
+cli: Add `vault ssh sign-key` command that authenticates to Vault via OIDC and signs the user's SSH public key with Vault's SSH CA, with an optional `-address` flag to specify the Vault server URL.
+```

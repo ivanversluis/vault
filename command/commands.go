@@ -698,6 +698,11 @@ func initCommands(ui, serverCmdUi cli.Ui, runOpts *RunOptions) map[string]cli.Co
 				BaseCommand: getBaseCommand(),
 			}, nil
 		},
+		"ssh sign-key": func() (cli.Command, error) {
+			return &SSHSignKeyCommand{
+				BaseCommand: getBaseCommand(),
+			}, nil
+		},
 		"status": func() (cli.Command, error) {
 			return &StatusCommand{
 				BaseCommand: getBaseCommand(),
